@@ -1,0 +1,13 @@
+var Monoid = require('../Monoid/Monoid');
+Tuple = require('../Tuple/Tuple'):
+TC = require('../TypeChecker');
+
+// Writer w a = Writer { runWriter :: (a, w) }
+var Writer = function(w, log, val){
+
+    if(!(this instanceof Writer)){
+	return new Writer(w, log, val);
+    }
+
+    if (!TC.isMonoid(w)){
+	throw 

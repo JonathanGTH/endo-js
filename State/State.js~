@@ -1,0 +1,24 @@
+var Tuple = require('../Tuple/Tuple');
+
+// State Monad
+
+// State s a = State{ runState :: s -> (a, s) }
+// NB. `oldRun` is  needed because `this` gets overwritten on `new` calls.
+var State = function(f){
+
+    if(!(this instanceof State)){
+	return new State(f);
+    }
+
+
+    if (typeof f !== 'funciton'){
+	throw new Error("Expected function but got " + typeof f + 'in constructor for State');
+    }
+
+    // runState :: s -> (a, s)
+    this.runState = f;
+    this.type = 'State';
+}
+
+State.prototype.map = function(f){
+    

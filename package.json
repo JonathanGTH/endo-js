@@ -1,0 +1,29 @@
+{
+    "name": "endo",
+    "version": "1.0.1",
+    "description": "Functors, Applicatives, Monads, Monoids, Algebras, Etc,",
+    "main": "endo.js",
+    "scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "homepage": "https://github.com/JonathanGTh/endo",
+    "keywords": [
+	"functor",
+	"monoids",
+	"applicative",
+	"monad",
+	"functional",
+	"programming",
+	"clojure",
+	"haskell",
+	"typechecker"
+    ],
+    "author": {
+	"name": "Jonathan Gonzalez"
+	,"email": "ImJonathanGth@gmail.com"
+	, "url": "https://jonathangth.github.io/"
+    },
+    "repository": "https://github.com/JonathanGTh/endo"
+}
+
+	
